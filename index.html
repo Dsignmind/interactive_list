@@ -10,7 +10,12 @@
         <section>
             <div id="main-jumbo" class="text-center jumbotron mx-3 mt-3">
                 <h1 class="display-4">Add To The List!</h1>
-                
+                <div id="alert-div" class="alert alert-danger" role="alert" style="display: none">
+                    You didn't enter anything!
+                    <button type="button" class="close" onclick="closeAlert()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div class="card" style="width: 40rem;">
                     <ul id="pageList" class="list-group list-group-flush">
                     </ul>
